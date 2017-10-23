@@ -549,9 +549,9 @@ Map.prototype.remove = function(callback) {
             id = ids[i];
             instance = obj[id];
             if (instance) {
-              if (typeof instance.remove === "function") {
+              /*if (typeof instance.remove === "function") {
                 instance.remove();
-              }
+              }*/
               instance.off();
               delete obj[id];
             }
